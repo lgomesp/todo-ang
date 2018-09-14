@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TaskService } from '../shared/task.service'
+import { TaskService } from '../shared/task.service';
 import { Task } from '../shared/task.model';
 
 import { ToastrService } from 'ngx-toastr';

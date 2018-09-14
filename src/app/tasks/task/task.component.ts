@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import { TaskService } from '../shared/task.service';
 import { NgForm } from '@angular/forms';
+
+import { TaskService } from '../shared/task.service';
 
 import { ToastrService } from 'ngx-toastr';
 
@@ -12,7 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class TaskComponent implements OnInit {
 
-  constructor(private taskService: TaskService, private toastr: ToastrService) { }
+  constructor(private toastr: ToastrService, public taskService: TaskService) { }
 
   ngOnInit() {
     this.resetForm();
