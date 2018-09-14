@@ -1,0 +1,15 @@
+<h6 class="text-center">List of tasks</h6>
+<table class="table table-sm table-hover">
+  <tr *ngFor="let task of taskList">
+    <td>{{ task.name }}</td>
+    <td>{{ task.category }}</td>
+    <td>
+      <a class="btn" (click)="onEdit(task)">
+        Editar
+      </a>
+      <a class="btn" (click)="onDelete(task.$key)">
+        Apagar
+      </a>
+    </td>
+  </tr>
+</table>
